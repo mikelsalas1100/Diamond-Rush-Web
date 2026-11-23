@@ -33,7 +33,7 @@ jobs:
           find raylib/src -maxdepth 1 -name 'libraylib*.a'
 
       - name: Compilar el juego
-        run: ./build.sh raylib/src
+        run: bash build.sh raylib/src
 
       - name: Preparar la pagina
         run: touch public/.nojekyll
